@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Maison — a warm, refined digital marketplace for beautiful everyday products."
+    />
+
+    <title>ZAVARO — Curated Goods</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================================
+       ANNOUNCEMENT
+  ========================================== -->
+
+    <div class="announcement">
+      <span>Complimentary delivery on orders over $150</span>
+      <span class="dot">•</span>
+      <span>New collection just arrived</span>
+    </div>
+
+    <!-- =========================================
+       HEADER
+  ========================================== -->
+
+    <header class="header" id="header">
+      <a href="#" class="logo"> ZAVARO<span>.</span> </a>
+
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#new">New in</a>
+        <a href="#story">Our story</a>
+        <a href="#journal">Journal</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-icon" id="searchOpen" aria-label="Search">
+          ⌕
+        </button>
+
+        <button
+          class="header-icon account"
+          id="accountBtn"
+          aria-label="Account"
+        >
+          ◎
+        </button>
+
+        <button class="bag-button" id="bagOpen">
+          Bag <span id="bagCount">0</span>
+        </button>
+
+        <button class="hamburger" id="menuOpen" aria-label="Open menu">
+          <i></i>
+          <i></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- =========================================
+       MOBILE NAVIGATION
+  ========================================== -->
+
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#shop">Shop</a>
+      <a href="#new">New in</a>
+      <a href="#story">Our story</a>
+      <a href="#journal">Journal</a>
+    </nav>
+
+    <main>
+      <!-- =========================================
+         HERO
+    ========================================== -->
+
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">A QUIETLY CONSIDERED COLLECTION</p>
+
+          <h1>
+            Beautiful things,<br />
+            <em>well chosen.</em>
+          </h1>
+
+          <p class="hero-description">
+            Everyday pieces with warmth, character and purpose. Discover a
+            considered collection made for modern living.
+          </p>
+
+          <a href="#shop" class="button dark">
+            Explore the collection
+            <span>↗</span>
+          </a>
+
+          <div class="hero-note">
+            <span class="line"></span>
+            <span>Curated with intention</span>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <div class="hero-photo"></div>
+
+          <div class="hero-label">
+            <span>01 / 04</span>
+
+            <strong>
+              Objects for<br />
+              everyday living.
+            </strong>
+          </div>
+
+          <div class="hero-circle">
+            EST.<br />
+            2026
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================
+         STATEMENT
+    ========================================== -->
+
+      <section class="statement">
+        <p>GOOD DESIGN</p>
+
+        <span>✦</span>
+
+        <p>WARM MATERIALS</p>
+
+        <span>✦</span>
+
+        <p>TIMELESS FORM</p>
+
+        <span>✦</span>
+
+        <p>GOOD DESIGN</p>
+
+        <span>✦</span>
+      </section>
+
+      <!-- =========================================
+         SHOP
+    ========================================== -->
+
+      <section class="shop section" id="shop">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">THE COLLECTION</p>
+
+            <h2>
+              Things you'll<br />
+              <em>want to keep.</em>
+            </h2>
+          </div>
+
+          <p class="section-intro">
+            A small collection of useful, beautiful objects selected for
+            everyday life.
+          </p>
+        </div>
+
+        <div class="shop-toolbar">
+          <div class="filters" id="filters">
+            <button class="filter active" data-category="all">All</button>
+
+            <button class="filter" data-category="new">New in</button>
+
+            <button class="filter" data-category="fashion">Fashion</button>
+
+            <button class="filter" data-category="objects">Objects</button>
+
+            <button class="filter" data-category="lifestyle">Lifestyle</button>
+          </div>
+
+          <span class="count" id="productCount"></span>
+        </div>
+
+        <div class="products" id="products"></div>
+      </section>
+
+      <!-- =========================================
+         FEATURE
+    ========================================== -->
+
+      <section class="feature" id="new">
+        <div class="feature-image"></div>
+
+        <div class="feature-content">
+          <p class="eyebrow">THE NEW SEASON</p>
+
+          <h2>
+            Warmth in<br />
+            <em>every detail.</em>
+          </h2>
+
+          <p>
+            Natural textures, thoughtful silhouettes and objects that bring a
+            softer rhythm to everyday spaces.
+          </p>
+
+          <a href="#shop" class="text-link">
+            Shop the new collection
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- =========================================
+         CATEGORIES
+    ========================================== -->
+
+      <section class="categories section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SHOP BY MOOD</p>
+
+            <h2>Find your <em>way.</em></h2>
+          </div>
+        </div>
+
+        <div class="category-grid">
+          <button class="category-card category-one" data-jump="fashion">
+            <span>01</span>
+
+            <strong> Quiet essentials </strong>
+
+            <small> Fashion </small>
+          </button>
+
+          <button class="category-card category-two" data-jump="objects">
+            <span>02</span>
+
+            <strong> Objects with soul </strong>
+
+            <small> Objects </small>
+          </button>
+
+          <button class="category-card category-three" data-jump="lifestyle">
+            <span>03</span>
+
+            <strong> Slow living </strong>
+
+            <small> Lifestyle </small>
+          </button>
+        </div>
+      </section>
+
+      <!-- =========================================
+         STORY
+    ========================================== -->
+
+      <section class="story section" id="story">
+        <div class="story-copy">
+          <p class="eyebrow">OUR PHILOSOPHY</p>
+
+          <h2>
+            Luxury doesn't<br />
+            have to <em>shout.</em>
+          </h2>
+
+          <p>
+            ZARVARO is built around a simple idea: the things around us should
+            feel good to use, beautiful to look at and worth keeping.
+          </p>
+
+          <a href="#journal" class="text-link">
+            Read our story
+            <span>→</span>
+          </a>
+        </div>
+
+        <div class="story-image"></div>
+      </section>
+
+      <!-- =========================================
+         JOURNAL
+    ========================================== -->
+
+      <section class="journal section" id="journal">
+        <div class="section-top">
+          <div>
+            <p class="eyebrow">THE JOURNAL</p>
+
+            <h2>
+              Notes on living<br />
+              <em>beautifully.</em>
+            </h2>
+          </div>
+        </div>
+
+        <div class="journal-grid">
+          <article>
+            <div class="journal-photo j1"></div>
+
+            <p class="eyebrow">DESIGN · 05.10.26</p>
+
+            <h3>The beauty of less</h3>
+
+            <a href="#"> Read story → </a>
+          </article>
+
+          <article>
+            <div class="journal-photo j2"></div>
+
+            <p class="eyebrow">MATERIALS · 28.09.26</p>
+
+            <h3>Objects with character</h3>
+
+            <a href="#"> Read story → </a>
+          </article>
+
+          <article>
+            <div class="journal-photo j3"></div>
+
+            <p class="eyebrow">LIFESTYLE · 18.09.26</p>
+
+            <h3>A slower way to live</h3>
+
+            <a href="#"> Read story → </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================================
+         NEWSLETTER
+    ========================================== -->
+
+      <section class="newsletter">
+        <div>
+          <p class="eyebrow">A LITTLE SOMETHING FROM US</p>
+
+          <h2>
+            Good things,<br />
+            <em>occasionally.</em>
+          </h2>
+        </div>
+
+        <form id="newsletter">
+          <input
+            type="email"
+            id="email"
+            placeholder="Your email address"
+            required
+          />
+
+          <button type="submit">
+            Join us
+            <span>→</span>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- =========================================
+       FOOTER
+  ========================================== -->
+
+    <footer>
+      <div class="footer-main">
+        <div>
+          <a class="logo footer-logo" href="#"> MAISON<span>.</span> </a>
+
+          <p>
+            Considered goods for<br />
+            modern living.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div>
+            <strong>Shop</strong>
+
+            <a href="#shop">New in</a>
+            <a href="#shop">Fashion</a>
+            <a href="#shop">Objects</a>
+          </div>
+
+          <div>
+            <strong>Maison</strong>
+
+            <a href="#story">Our story</a>
+            <a href="#journal">Journal</a>
+            <a href="#">Contact</a>
+          </div>
+
+          <div>
+            <strong>Help</strong>
+
+            <a href="#">Shipping</a>
+            <a href="#">Returns</a>
+            <a href="#">FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span> © 2026 Maison </span>
+
+        <span> Made with intention. </span>
+      </div>
+    </footer>
+
+    <!-- =========================================
+       OVERLAY
+  ========================================== -->
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- =========================================
+       SHOPPING BAG
+  ========================================== -->
+
+    <aside class="bag" id="bag">
+      <div class="bag-header">
+        <h2>Your bag</h2>
+
+        <button class="close" id="bagClose">×</button>
+      </div>
+
+      <div class="bag-items" id="bagItems"></div>
+
+      <div class="bag-empty" id="bagEmpty">
+        Your bag is waiting for something beautiful.
+      </div>
+
+      <div class="bag-footer">
+        <div class="subtotal">
+          <span> Subtotal </span>
+
+          <strong id="subtotal"> $0.00 </strong>
+        </div>
+
+        <p>Shipping and taxes are calculated at checkout.</p>
+
+        <button class="button dark full" id="checkout">
+          Checkout
+          <span>→</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- =========================================
+       SEARCH
+  ========================================== -->
+
+    <section class="search" id="search">
+      <div class="search-inner">
+        <button class="close search-close" id="searchClose">×</button>
+
+        <p class="eyebrow">SEARCH THE COLLECTION</p>
+
+        <input
+          id="searchInput"
+          type="search"
+          placeholder="What are you looking for?"
+        />
+
+        <div id="searchResults"></div>
+      </div>
+    </section>
+
+    <!-- =========================================
+       PRODUCT MODAL
+  ========================================== -->
+
+    <section class="product-modal" id="productModal">
+      <div class="modal-box">
+        <button class="close modal-close" id="modalClose">×</button>
+
+        <div class="modal-image" id="modalImage"></div>
+
+        <div class="modal-details">
+          <p class="eyebrow" id="modalCategory"></p>
+
+          <h2 id="modalName"></h2>
+
+          <strong id="modalPrice"></strong>
+
+          <p id="modalDescription"></p>
+
+          <button class="button dark full" id="modalAdd">
+            Add to bag
+            <span>+</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+       TOAST
+  ========================================== -->
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
